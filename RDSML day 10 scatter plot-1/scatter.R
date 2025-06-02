@@ -46,6 +46,7 @@ ggplot(dataset, aes(x = wt, y = mpg)) +
 # changing the point shapes by the levels of cyl
 ggplot(dataset, aes(x=wt, y=mpg, shape=cyl)) +
   geom_point()
+
 # converting the cyl column froma numeric to factor variable
 dataset$cyl = as.factor(dataset$cyl)
 

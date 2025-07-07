@@ -47,7 +47,3 @@ ggplot(myData, aes(x = dose, y = len, fill = supp)) +
 ggplot(myData, aes(x = dose, y = len, fill = supp)) + 
   geom_boxplot(position = position_dodge(1.1))
 
-
-
-
-

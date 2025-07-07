@@ -1,6 +1,8 @@
-tooth.data = ToothGrowth
+# Importing the dataset
+tooth_data = ToothGrowth
 
-# creating a function for summarizing the data based on the grouping variables
+# Creating a function for summarizing the data 
+# based on the grouping variables
 
 data_summary = function(data, varname, groupnames){
   require(plyr)
@@ -12,5 +14,4 @@ data_summary = function(data, varname, groupnames){
   return(data_sum)
 }
 
-d.summary = data_summary(tooth_data, varname = "len", groupnames = 
-                           c("supp", "dose"))
+d_summary = data_summary(tooth_data, varname = "len", groupnames = c("supp", "dose"))
